@@ -1,0 +1,121 @@
+.footer {
+    background-color: $gray-2;
+    color: $white;
+
+    .sob-footer {
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0;
+            border-bottom: 1px solid $white;
+
+            a {
+                outline: none;
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+
+            .social-media {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    li {
+                        a {
+                            img {
+                                width: 40px;
+                                height: 40px;
+                                margin-right: 15px;
+                            }
+                        }
+
+                        &:last-of-type {
+                            a {
+                                img {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-info {
+            padding: 30px 0;
+            border-bottom: 1px solid $white;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 100%;
+
+                    img {
+                        margin-right: 8px;
+                    }
+
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .website-info {
+            padding: 30px 0;
+
+            h6 {
+                color: $primary;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1;
+                letter-spacing: -0.72px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+
+            ul {
+                li {
+                    color: $white;
+                    margin-bottom: 15px;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 1;
+                    letter-spacing: -0.68px;
+                }
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.2;
+                letter-spacing: -0.68px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .sub-footer {
+        padding: 20px 0;
+        background-color: $white;
+        text-align: center;
+
+        p {
+            color: $gray-1;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
