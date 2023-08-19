@@ -64,6 +64,7 @@
                     align-items: center;
                     justify-content: flex-start;
                     width: 100%;
+                    font-weight: 700;
 
                     @media screen and (max-width: 991px) {
                         margin-bottom: 15px;
@@ -116,7 +117,7 @@
             p {
                 font-size: 17px;
                 font-weight: 400;
-                line-height: 1.2;
+                line-height: 1.4;
                 letter-spacing: -0.68px;
                 margin-bottom: 20px;
 
@@ -128,14 +129,56 @@
     }
 
     .sub-footer {
-        padding: 20px 0;
+        padding: 15px 0;
         background-color: $white;
         text-align: center;
 
-        p {
-            color: $gray-1;
-            margin: 0;
-            padding: 0;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            @media screen and (max-width: 991px) {
+                flex-direction: column;
+
+            }
+    
+            .partner {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+        
+                @media screen and (max-width: 991px) {
+                    flex-direction: column;
+                }
+    
+                p {
+                    margin-right: 8px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: -0.56px;
+
+                    @media screen and (max-width: 991px) {
+                        margin-bottom: 15px;
+                        margin-right: 0;
+                    }
+                }
+
+                img {
+                    @media screen and (max-width: 991px) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+    
+            p {
+                color: $gray-1;
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: -0.56px;
+            }
         }
     }
 }
