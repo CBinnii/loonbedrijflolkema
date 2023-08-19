@@ -19789,33 +19789,19 @@ input:active, input:focus, button:active, button:focus {
         .slider .slider-home .swiper-slide .slider-general .row-slider, .slider .slider-geral .swiper-slide .slider-general .row-slider {
           align-items: center; }
           .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text {
-            display: flex;
-            flex-direction: column; }
+            display: flex; }
             .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
               font-weight: 700;
               font-size: 46px;
-              line-height: 56px;
-              color: #000000;
+              line-height: 1;
+              color: #FFFFFF;
               text-align: left;
-              max-width: 713px;
               position: relative;
-              margin-bottom: 32px; }
+              filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.65));
+              margin-bottom: 0; }
               @media screen and (max-width: 991px) {
                 .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
-                  max-width: 100%; } }
-              .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1:after, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1:after, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1:after, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1:after {
-                content: '';
-                width: 100%;
-                height: 8px;
-                background-color: #DD2444;
-                position: absolute;
-                bottom: -16px;
-                border-radius: 15px;
-                left: 0; }
-              @media screen and (max-width: 991px) {
-                .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
-                  font-size: 20px;
-                  line-height: 24px; } }
+                  font-size: 20px; } }
             .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text P {
               font-weight: 500;
               font-size: 24px;
@@ -20055,6 +20041,43 @@ input:active, input:focus, button:active, button:focus {
   @media screen and (max-width: 991px) {
     .section .title {
       font-size: 24px; } }
+.section .section-content {
+  padding: 50px 0; }
+  @media screen and (max-width: 991px) {
+    .section .section-content {
+      padding: 30px 0; } }
+  .section .section-content:nth-child(even) {
+    background: #CCC; }
+  .section .section-content:nth-child(odd) {
+    background: #FFF; }
+  .section .section-content .row {
+    min-height: 280px;
+    align-items: center; }
+    .section .section-content .row .text-box p {
+      color: #21201f;
+      text-align: justify;
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.4; }
+      .section .section-content .row .text-box p strong {
+        font-weight: 700; }
+      .section .section-content .row .text-box p:last-of-type {
+        margin-bottom: 0; }
+      @media screen and (max-width: 991px) {
+        .section .section-content .row .text-box p {
+          font-size: 16px; } }
+    .section .section-content .row .image-box {
+      position: relative;
+      width: 100%;
+      height: 350px; }
+      .section .section-content .row .image-box .hexagon-shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%); }
 .section .section-about {
   padding-top: 30px;
   padding-bottom: 50px; }
@@ -20083,6 +20106,37 @@ input:active, input:focus, button:active, button:focus {
     line-height: 32px; }
     @media screen and (max-width: 991px) {
       .section .section-about .right p {
+        font-size: 16px; } }
+.section .section-about-service {
+  padding-top: 30px;
+  padding-bottom: 50px; }
+  .section .section-about-service .left {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section .section-about-service .left .text-box {
+      width: 100%; }
+      .section .section-about-service .left .text-box p {
+        color: #21201f;
+        text-align: justify;
+        font-size: 18px;
+        margin-bottom: 15px;
+        line-height: 1.4; }
+        .section .section-about-service .left .text-box p strong {
+          font-weight: 700; }
+        .section .section-about-service .left .text-box p:last-of-type {
+          margin-bottom: 0; }
+        @media screen and (max-width: 991px) {
+          .section .section-about-service .left .text-box p {
+            font-size: 16px; } }
+  .section .section-about-service .right p {
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; }
+    @media screen and (max-width: 991px) {
+      .section .section-about-service .right p {
         font-size: 16px; } }
 .section .section-services {
   background-color: #3c3c3c;
