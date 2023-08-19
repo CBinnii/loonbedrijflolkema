@@ -55,6 +55,12 @@
         padding-top: 30px;
         padding-bottom: 50px;
 
+        .box-hexagon {
+            @media screen and (max-width: 991px) {
+                margin-bottom: 20px;
+            }
+        }
+
         .section-services-top {
             display: flex;
             justify-content: space-between;

@@ -20,3 +20,16 @@
 body {
 	font-family: 'Open Sans', Verdana, sans-serif;
 }
+
+
+@media screen and (max-width: 991px) {
+	.mob-mb-15 {
+		margin-bottom: 15px;
+	}
+	.mob-mb-30 {
+		margin-bottom: 30px;
+	}
+	.mob-mb-45 {
+		margin-bottom: 45px;
+	}
+}
