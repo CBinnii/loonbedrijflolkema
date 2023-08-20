@@ -18,6 +18,15 @@
         font-weight: 700;
         letter-spacing: -0.72px;
         text-transform: uppercase;
+        margin-right: 15px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &.button-no-hexagon {
+            padding-right: 30px;
+        }
 
         @media screen and (max-width: 991px) {
             font-size: 16px;

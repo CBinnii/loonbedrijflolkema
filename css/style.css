@@ -19725,7 +19725,12 @@ input:active, input:focus, button:active, button:focus {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: -0.72px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-right: 15px; }
+    .button .button-default:last-of-type {
+      margin-right: 0; }
+    .button .button-default.button-no-hexagon {
+      padding-right: 30px; }
     @media screen and (max-width: 991px) {
       .button .button-default {
         font-size: 16px; } }
@@ -20110,34 +20115,42 @@ input:active, input:focus, button:active, button:focus {
 .section .section-about-service {
   padding-top: 30px;
   padding-bottom: 50px; }
-  .section .section-about-service .left {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .section .section-about-service .left .text-box {
-      width: 100%; }
-      .section .section-about-service .left .text-box p {
+  .section .section-about-service .row {
+    align-items: center; }
+  .section .section-about-service .left .text-box {
+    width: 100%; }
+    .section .section-about-service .left .text-box p {
+      color: #21201f;
+      text-align: justify;
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.4; }
+      .section .section-about-service .left .text-box p strong {
+        font-weight: 700; }
+      .section .section-about-service .left .text-box p:last-of-type {
+        margin-bottom: 0; }
+      @media screen and (max-width: 991px) {
+        .section .section-about-service .left .text-box p {
+          font-size: 16px; } }
+  .section .section-about-service .right .text-box {
+    width: 100%;
+    background-color: #fae0e4;
+    padding: 30px 60px; }
+    .section .section-about-service .right .text-box ul {
+      column-count: 2; }
+      .section .section-about-service .right .text-box ul li {
         color: #21201f;
         text-align: justify;
         font-size: 18px;
         margin-bottom: 15px;
         line-height: 1.4; }
-        .section .section-about-service .left .text-box p strong {
+        .section .section-about-service .right .text-box ul li strong {
           font-weight: 700; }
-        .section .section-about-service .left .text-box p:last-of-type {
+        .section .section-about-service .right .text-box ul li:last-of-type {
           margin-bottom: 0; }
         @media screen and (max-width: 991px) {
-          .section .section-about-service .left .text-box p {
+          .section .section-about-service .right .text-box ul li {
             font-size: 16px; } }
-  .section .section-about-service .right p {
-    color: #000000;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px; }
-    @media screen and (max-width: 991px) {
-      .section .section-about-service .right p {
-        font-size: 16px; } }
 .section .section-services {
   background-color: #3c3c3c;
   padding-top: 30px;
