@@ -22,11 +22,11 @@
         }
 
         &:nth-child(even) {
-            background: #CCC;
+            background: $gray-4;
         }
 
         &:nth-child(odd) {
-            background: #FFF;
+            background: $white;
         }
 
         .row {
@@ -34,6 +34,15 @@
             align-items: center;
     
             .text-box {
+                .title {
+                    font-size: 24px;
+                    padding-bottom: 15px;
+        
+                    @media screen and (max-width: 991px) {
+                        font-size: 18px;
+                    }
+                }
+
                 p {
                     color: $gray-1;
                     text-align: justify;
@@ -163,9 +172,14 @@
                     li {
                         color: $gray-1;
                         text-align: justify;
-                        font-size: 18px;
+                        font-size: 16px;
                         margin-bottom: 15px;
                         line-height: 1.4;
+
+                        span {
+                            color: $primary;
+                            font-weight: 700;
+                        }
             
                         strong {
                             font-weight: 700;
