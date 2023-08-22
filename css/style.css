@@ -19711,6 +19711,10 @@ input:active, input:focus, button:active, button:focus {
 .button {
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 991px) {
+    .button {
+      flex-direction: column;
+      align-items: center; } }
   .button .button-default {
     position: relative;
     background-color: #dd2444;
@@ -19731,9 +19735,15 @@ input:active, input:focus, button:active, button:focus {
       margin-right: 0; }
     .button .button-default.button-no-hexagon {
       padding-right: 30px; }
+      @media screen and (max-width: 991px) {
+        .button .button-default.button-no-hexagon {
+          max-width: 300px;
+          margin-right: 0;
+          margin-bottom: 15px; } }
     @media screen and (max-width: 991px) {
       .button .button-default {
-        font-size: 16px; } }
+        font-size: 16px;
+        margin-bottom: 30px; } }
     .button .button-default .hexagon {
       right: 15px; }
 
@@ -19889,7 +19899,7 @@ input:active, input:focus, button:active, button:focus {
 .header {
   height: 100px;
   box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2); }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1200px) {
     .header {
       height: 70px;
       position: fixed;
@@ -19901,7 +19911,7 @@ input:active, input:focus, button:active, button:focus {
     height: 100%;
     padding: 0;
     background-color: #FFFFFF; }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1200px) {
       .header .navbar {
         padding: 4px 0; } }
     .header .navbar .container {
@@ -19911,7 +19921,7 @@ input:active, input:focus, button:active, button:focus {
         .header .navbar .container .navbar-brand img {
           width: 210px;
           height: auto; }
-          @media screen and (max-width: 991px) {
+          @media screen and (max-width: 1200px) {
             .header .navbar .container .navbar-brand img {
               width: auto;
               height: 40px; } }
@@ -19960,7 +19970,7 @@ input:active, input:focus, button:active, button:focus {
           height: 100%; }
           .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav {
             height: 50px; }
-            @media screen and (max-width: 991px) {
+            @media screen and (max-width: 1200px) {
               .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav {
                 box-shadow: 0px -4px 10px rgba(18, 18, 18, 0.2);
                 margin: 0 !important;
@@ -19972,12 +19982,18 @@ input:active, input:focus, button:active, button:focus {
               .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link {
                 height: 100%;
                 display: flex;
+                justify-content: center;
                 align-items: center;
+                text-align: center;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 17px;
-                color: #3c3c3c; }
-                @media screen and (max-width: 991px) {
+                color: #3c3c3c;
+                line-height: 1.4; }
+                @media screen and (max-width: 1340px) {
+                  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link {
+                    font-size: 14px; } }
+                @media screen and (max-width: 1200px) {
                   .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link {
                     color: #3c3c3c;
                     font-size: 18px;
@@ -20000,12 +20016,12 @@ input:active, input:focus, button:active, button:focus {
                         width: 100%;
                         height: 4px;
                         background: #dd2444;
-                        bottom: 0;
+                        bottom: -5px;
                         left: 0; } }
-                @media screen and (max-width: 991px) {
+                @media screen and (max-width: 1200px) {
                   .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active {
                     border-bottom: 2px solid #dd2444; } }
-          @media screen and (max-width: 991px) {
+          @media screen and (max-width: 1200px) {
             .header .navbar .container .navbar-menu .navbar-collapse {
               position: absolute;
               width: 100%;
@@ -20080,7 +20096,8 @@ input:active, input:focus, button:active, button:focus {
     .section .section-content .row .image-box {
       position: relative;
       width: 100%;
-      height: 350px; }
+      height: 350px;
+      margin: 15px 0; }
       .section .section-content .row .image-box .hexagon-shape {
         position: absolute;
         width: 100%;
@@ -20142,8 +20159,14 @@ input:active, input:focus, button:active, button:focus {
     width: 100%;
     background-color: #fae0e4;
     padding: 30px 60px; }
+    @media screen and (max-width: 991px) {
+      .section .section-about-service .right .text-box {
+        padding: 15px 20px; } }
     .section .section-about-service .right .text-box ul {
       column-count: 2; }
+      @media screen and (max-width: 991px) {
+        .section .section-about-service .right .text-box ul {
+          column-count: 1; } }
       .section .section-about-service .right .text-box ul li {
         color: #21201f;
         text-align: left;
